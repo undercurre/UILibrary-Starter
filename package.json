@@ -1,0 +1,51 @@
+{
+    "name": "metu-ui",
+    "version": "1.1.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "eslint": "eslint --ext .js,.vue,.ts --fix .",
+        "prettier": "prettier --write ./*.{ts,tsx,js,jsx,css,less,scss,json,md}",
+        "stylelint": "stylelint ./*.{scss,css} --fix --allow-empty-input",
+        "prepare": "husky install",
+        "commit": "git add . && git-cz",
+        "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0",
+        "release": "standard-version"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "@commitlint/config-conventional": "^17.4.2",
+        "@typescript-eslint/eslint-plugin": "^5.48.1",
+        "@typescript-eslint/parser": "^5.48.1",
+        "@vitejs/plugin-vue": "^4.0.0",
+        "commitizen": "^4.2.6",
+        "commitlint": "^17.4.2",
+        "commitlint-config-cz": "^0.13.3",
+        "conventional-changelog-cli": "^2.2.2",
+        "cz-conventional-changelog": "^3.3.0",
+        "cz-customizable": "^7.0.0",
+        "eslint": "^8.31.0",
+        "eslint-config-prettier": "^8.6.0",
+        "eslint-plugin-prettier": "^4.2.1",
+        "eslint-plugin-vue": "^9.9.0",
+        "husky": "^8.0.3",
+        "prettier": "^2.8.3",
+        "standard-version": "^9.5.0",
+        "stylelint": "^14.16.1",
+        "stylelint-config-standard": "^29.0.0",
+        "stylelint-order": "^6.0.1",
+        "stylelint-scss": "^4.3.0",
+        "typescript": "^4.9.4",
+        "vite": "^4.0.4",
+        "vite-plugin-dts": "^1.7.1",
+        "vue": "^3.2.36"
+    },
+    "config": {
+        "commitizen": {
+            "path": "node_modules/cz-customizable"
+        }
+    }
+}
